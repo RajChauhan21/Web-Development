@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Elment Selector */
+        div{
+            background-color: bisque;
+        }
+
+        /* Class Selector */
+        .onlyme{
+            background-color: yellowgreen;
+        }
+
+        /* Id Selector */
+        #divtag{
+            background-color: thistle;
+        }
+
+        /* Child Selectors */
+        div>p{
+            background-color: rgb(231, 199, 231);
+        }
+
+        /* Descedant Selectors */
+        div p{
+            background-color: springgreen;
+        }
+
+        /* Universal Selctors */
+        *{
+            text-decoration: underline;
+        }
+
+        /* Pseudo Selectors */
+        a:visited{
+            color:red;
+        }
+
+        a:link{
+            color: cornflowerblue;
+        }
+
+        a:active{
+            background-color:cornsilk;
+        }
+
+        a:hover{
+            background-color:maroon;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="onlyme">I am a Division Tag
+      <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, eligendi doloribus voluptates sed aliquid porro non vero quidem minima nemo sunt architecto obcaecati distinctio cupiditate, aperiam ab. Vero, illum repellat.</p>
+      </main>
+    </div>
+    <div>I am also a Division Tag</div>
+    <div id="divtag">Oh! Hello Division Tag Here</div>
+
+    <a href="https://www.google.com">Google Par Chalein!</a>
+
+    <a href="https://www.meesho.com">Let's Go To Messho</a>
+</body>
+</html>
