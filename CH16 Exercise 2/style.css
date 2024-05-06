@@ -1,0 +1,14 @@
+h1{
+    letter-spacing: 6px;
+    color: lightseagreen;
+}
+div p{
+    background-color:lightcyan;
+    color: brown;
+}
+
+div :first-child{
+    background-color: aqua;
+    color: darkred;
+}
+
