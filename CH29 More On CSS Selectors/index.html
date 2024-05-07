@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On CSS Selectors</title>
+    <style>
+        /* .box:first-child{ */
+        /* background-color: cadetblue; */
+        /* } */
+        .boxes *{
+            color: rgb(104, 163, 215);
+        }
+        /* .box::first-line{
+            color: blue;
+        } */
+
+         .box::first-letter{ 
+            color: lightgreen;
+            font-size: 40px;
+        }
+        
+
+        /* .box:nth-child(2) {
+            background-color: aqua;
+        } */
+        /* span,div,p,a,.box,[data-colo="pr"]{
+            border: 2px solid lightblue;
+            color:indianred;
+        } */
+        /* .box:nth-child(odd){
+            background-color: hotpink;
+        }
+
+        .box:nth-last-child(1){
+            background-color: cornflowerblue;
+        }
+
+        .boxes::before{
+            content: "Hello Raj This Side";
+        }
+        .boxes::after{
+            content: "Thank you Signing off";
+        } */ */
+
+        ::selection{
+            color: aqua;
+            background-color:black;
+        }
+        input::placeholder{
+            color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" name="" id="" placeholder="Enter Your Name">
+    <div class="boxes">
+        <div data-colo="pr" class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero alias nihil earum corrupti ab
+            odio similique accusantium sint minus architecto fugit accusamus minima animi, non quibusdam doloremque eos
+            possimus, laborum tempora! Quaerat fuga placeat id tempora aspernatur, modi aliquam vitae quas. Laudantium
+            ducimus totam hic distinctio cupiditate ex reprehenderit veritatis? Laborum incidunt, sint repellendus
+            veritatis dicta rerum inventore rem, porro quia blanditiis error aperiam quisquam impedit nemo numquam unde
+            sed quaerat magni voluptas at ullam vitae? Eligendi labore quia ipsum suscipit. Nobis tempore ullam, saepe
+            quaerat amet dolorem deserunt, nihil obcaecati explicabo eos aperiam fugiat, id sed sint eum tenetur alias
+            nostrum animi. Cupiditate doloremque iure, et accusamus provident vero illum deleniti repellat ea error,
+            eius, ducimus nihil enim sint quos ratione reiciendis. Eaque suscipit repellendus corporis nam? Quod sequi
+            dolorum accusantium ullam similique in, optio nobis aut delectus consequuntur fugit aliquid laudantium
+            corporis asperiores minus magni dignissimos fugiat porro error nesciunt. Beatae recusandae dolorem a, harum
+            impedit, animi perspiciatis tempora alias odio ad culpa dignissimos non cupiditate reiciendis voluptas.
+            Beatae dolore temporibus illum aut nesciunt non at exercitationem soluta eius consectetur, iure dolores
+            placeat ipsam qui quod eveniet ducimus necessitatibus mollitia. Ea, labore vel asperiores ex sed delectus,
+            maiores consequatur necessitatibus dolores commodi sit. Omnis assumenda maiores modi veritatis similique
+            iure nam nisi reprehenderit, possimus quia eius praesentium blanditiis eveniet autem, facilis commodi culpa
+            ipsa quos, quaerat quae! Deserunt animi possimus suscipit laborum fugiat, aliquid nulla. Ab eaque
+            praesentium vero, nostrum sint rem quibusdam assumenda dolorum inventore nihil error commodi exercitationem
+            earum quidem ut eius voluptas soluta ipsum ipsa minus. Ducimus doloremque voluptatibus perspiciatis sint non
+            magni sed ullam, adipisci quibusdam voluptatem est dolores illum quam quae dolor unde aperiam maxime officia
+            ipsum deleniti ea eaque. Sint, beatae, necessitatibus aperiam obcaecati nobis, dignissimos ea voluptatem
+            reiciendis molestiae nesciunt adipisci?
+        </div>
+        <div class="box">I Am a Div Box</div>
+        <div class="box">I am a Div Box</div>
+    </div>
+</body>
+
+</html>
