@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Varaibles</title>
+    <style>
+
+        :root{
+            --color:rgb(202, 240, 135);
+            --seccolor:rgb(88, 116, 165);
+            --defpad:20px;
+            --defopacity:0.7;
+        }
+        * {
+            padding: var(--defpad);
+            margin: 5px;
+        }
+
+        .first {
+            color: var(--seccolor);
+            border: 2px var(--color);
+            font-size: larger;
+            font-weight: 800;
+        }
+
+        ul li {
+            list-style: lower-greek;
+            list-style-position: inside;
+        }
+
+        ul {
+            display: flex;
+        }
+    
+        .sec {
+            color:var(--seccolor);
+            font-size: larger;
+            font-weight: 800;
+        }
+
+        ul li:first-child{
+            opacity:var(--defopacity);
+            --color:rgb(253, 249, 160);
+            background-color: var(--color,rgb(233, 121, 207));
+           border-radius: 20px;
+
+        }
+
+        ul li:nth-child(2){
+            --color:rgb(245, 162, 226);
+            background-color: var(--color);         
+            border-radius: 20px;
+        }
+
+        ul li:nth-child(3){
+            --color:rgb(172, 234, 173);
+            background-color: var(--color);
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <ul>
+            <li>Panner</li>
+            <li>Bhatoore</li>
+            <li>Biryani</li>
+        </ul>
+    </div>
+
+    <div class="sec">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, magni? Officiis, optio! Omnis sequi,
+        repellendus corrupti voluptate iure quae praesentium. Harum fuga facere cum voluptatem, fugit delectus.
+        Temporibus, praesentium? Eos quae animi deleniti, blanditiis mollitia error nisi nostrum modi corporis
+        reiciendis placeat omnis corrupti eaque. Itaque corporis id adipisci! Odit temporibus aliquam ea fugit! Aliquam
+        ipsa ad, suscipit, nesciunt voluptate quae porro voluptatum facere ullam voluptates quam quidem soluta totam
+        velit maiores, itaque sed a quo esse et eum! Similique harum accusamus illo molestiae et fugit laboriosam quo
+        temporibus incidunt ipsum odit pariatur aliquam explicabo, enim aliquid ullam nisi?
+    </div>
+</body>
+
+</html>
