@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        * {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .box {
+            width: 82vw;
+            height:20vh;
+            border: 2px solid deepskyblue;
+        }
+
+        .box1 {
+            background-color: rgb(62, 201, 248);
+            position: sticky;
+            top: 0px;
+            height: 10vh;
+
+        }
+
+        .box2 {
+            background-color: rgb(102, 203, 237);
+
+        }
+
+        .box3 {
+            background-color: rgb(177, 253, 253);
+            /* position: fixed;
+            bottom: 0px;
+            left: 1px;
+            height: 10vh;
+            width: 20vw; */
+        }
+
+        .box4 {
+            background-color: lightcyan;
+
+        }
+
+        .box5 {
+            background-color: rgb(224, 246, 246);
+
+        }
+
+        .parent {
+            border: 2px solid darkred;
+            padding: 15px;
+            width: 85vw;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Note : Transform , filter , Perspective Property -->
+    <!-- can also make an element as positioned -->
+
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+    </div>
+
+</body>
+
+</html>
