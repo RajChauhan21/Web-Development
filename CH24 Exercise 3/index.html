@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color:black;
+        }
+        body{
+            background-color: grey;
+        }
+        .parent {
+            position: relative;
+            border: 2px solid lightgreen;
+            border-radius: 20px;
+            margin: 15px;
+            width: 30vw;
+            height: 80vh;
+            padding: 12px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .box {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 30vw;
+            padding: 20px;
+            position: relative;
+            top: -80px;
+            right: 20px;
+            text-align: left;
+            font-weight: 600;
+            color:var(--color);
+        }
+
+        .head {
+            width: 20vw;
+            height: 12vh;
+            position: relative;
+            top: 7px;
+            right: -9px;
+            font-weight: bolder;
+            text-shadow: 2px 3px 4px black;
+        }
+
+        .img {
+            border: 1px solid black;
+            border-radius: 20px;
+            position: relative;
+            top: 11px;
+            left: -1px;
+            width: 30vw;
+            height: 42vh;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        .art {
+            position: relative;
+            top: 20px;
+            left: 10px;
+            font-size: larger;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 20px;
+            height: 1vh;
+            display: inline-block;
+            background-color: rgb(247, 247, 247);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <img src="nature.jpg" class="img">
+        <div class="art">Nature</div>
+        <div class="art"> Lake</div>
+        <h1 class="head">Beauty Of the Nature</h1>
+        <div class="box">Nature is an inherent character or constitution,particularly of the ecosphere or the universe
+            as a whole. In this general sense nature refers to the laws, elements and phenomena of the physicalworld,
+            including life. Although humans are part of nature, human activity or humans as a whole are oftendescribed
+            as at times at odds, or outright separate and even superior to nature.</div>
+    </div>
+
+</body>
+
+</html>
