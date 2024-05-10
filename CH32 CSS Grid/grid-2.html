@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+        .container{
+            border: 2px solid darkgreen;
+            display: grid;
+            grid-template-areas: "nav nav nav"
+                                 "side Article Article"
+                                 "footer footer footer";
+        }
+        .box{
+            border: 2px solid lightsalmon;
+            height: 55px;
+        }
+          .box1{
+           grid-area: nav;
+           background-color: rgb(217, 239, 246);
+        } 
+        .box2{
+           grid-area: side;
+           background-color: rgb(241, 182, 109);
+        }
+        .box3{
+            grid-area: Article;
+            background-color:rgb(201, 255, 92);
+        }
+        .box4{
+            grid-area:footer;
+            background-color: rgb(235, 235, 112);
+        }
+        /* .box5{
+            /* grid-area: nav; */
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <!-- <div class="box box5">5</div> -->
+        <!-- <div class="box box6">6</div> -->
+    </div>
+</body>
+</html>
