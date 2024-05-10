@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FlexBox</title>
+    <style>
+        .container{
+            border: 8px solid lemonchiffon;
+            display: flex;
+            height: 90vh;
+            justify-content: center;
+            /* align-content:flex-end; */
+            align-items:center;
+            /* align-items:center; */
+           
+            /* flex-wrap:wrap ; */
+            /* flex-flow: row wrap-reverse; */
+            /* gap: 30px; */
+            /* row-gap: 50px; */
+            /* column-gap: 50px; */
+            gap: 40px 0px;
+            flex-direction:row;
+        }
+        .box,.box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10,.box11,.box12,.box13,.box14{
+            border: 2px solid deepskyblue;
+            width: 50px;
+            height: 50px;
+            /* margin: 10px; */
+            padding: 3px;
+            background-color: lightgrey;
+            /* flex-grow: 1; */
+        }
+        /* .box1,.box3,.box5,.box7,.box9,.box11,.box13{ */
+            /* align-self: flex-start; */
+        /* } */
+        /* .box,.box2,.box4,.box6,.box8,.box10,.box12,.box14{ */
+            /* align-self: flex-end; */
+        /* } */
+        /* .box1{
+            flex-shrink: 2;
+            border: 2px solid deepskyblue;
+            background-color: lightgrey;
+            width: 50px;
+            height: 50px;
+        } */
+        /* .order-1{
+            order: 1;
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+        } */
+        
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box order-3">1</div>
+    <div class="box1">2</div>
+    <div class="box2">3</div>
+    <div class="box3 order-3">4</div>
+    <div class="box4">5</div>
+    <div class="box5">6</div>
+    <div class="box6">7</div>
+    <div class="box7">8</div>
+    <div class="box8 order-3">9</div>
+    <div class="box9">10</div>
+    <div class="box10">11</div>
+    <div class="box11 order-3">12</div>
+    <div class="box12">13</div>
+    <div class="box13">14</div>
+    <div class="box14">15</div>
+    <!-- <div class="box">16</div>
+    <div class="box">17</div>
+    <div class="box">18</div>
+    <div class="box">19</div>
+    <div class="box">20</div>
+    <div class="box">21</div>
+    <div class="box">22</div>
+    <div class="box">23</div>
+    <div class="box">24</div>
+    <div class="box">25</div>
+    <div class="box order-1">26</div>
+    <div class="box">27</div>
+    <div class="box">28</div>
+    <div class="box order-1">29</div>
+    <div class="box">30</div>
+    <div class="box order-1">31</div>
+    <div class="box order-1">32</div>
+    <div class="box">33</div>
+    <div class="box">34</div>
+    <div class="box">35</div>
+    <div class="box order-1">36</div>
+    <div class="box">37</div>
+    <div class="box order-1">38</div>
+    <div class="box">39</div>
+    <div class="box order-1">40</div>
+    <div class="box">41</div>
+    <div class="box order-1">42</div>
+    <div class="box">43</div>
+    <div class="box">44</div>
+    <div class="box order-1">45</div>
+    <div class="box order-1">46</div>
+    <div class="box">47</div>
+    <div class="box">48</div>
+    <div class="box order-1">49</div>
+    <div class="box order-1">50</div>
+    <div class="box">51</div>
+    <div class="box order-1">52</div>
+    <div class="box">53</div>
+    <div class="box order-1">54</div> -->
+
+</div>
+</body>
+</html>
