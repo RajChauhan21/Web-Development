@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        .container {
+            background-color: aquamarine;
+            width: 95vw;
+            height: 80vh;
+        }
+
+        .box {
+            background-color: thistle;
+            width: 20vw;
+            height: 20vh;
+            transition-property: all;  
+            transition-duration: 3s;
+            transition-timing-function:ease-out;
+             transition-delay: 1s; 
+            /* transition:all 3s cubic-bezier(0, 1.11, 0.97,-0.67) 1s; */
+        }
+
+        .translate {
+            /* transform:scale(1.50) translateX(45vw) translateY(30vh); */
+            transform: rotate(890deg);
+            background-color: rgb(33, 220, 45);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box translate">
+            <h1>Raj Chauhan</h1>
+        </div>
+    </div>
+</body>
+
+</html>
