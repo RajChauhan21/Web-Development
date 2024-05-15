@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            width: 90vw;
+            height: 90vh;
+        }
+        .bar{
+            border: 2px solid black;
+            width: 60vw;
+            height: 3vh;
+        }
+        .box{
+            /* border: 2px solid black; */
+            width: 1vw;
+            height:3.0vh;
+            background-color: aqua;
+            /* animation: probar;
+            animation-duration: 4s;
+            animation-timing-function: ease-in;
+            animation-delay: 1s;
+            animation-fill-mode: forwards; */
+        
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: probar 4s cubic-bezier(0, 0, 0.42, 0.99) 1s infinite forwards normal;
+          
+        }
+        @keyframes probar {
+            0%{
+                width: 0vw;
+            }
+            5%{
+                width: 5vw;
+            }
+            10%{
+                width: 10vw;
+                background-color: aquamarine;
+            }
+            15%{
+                width: 15vw;
+                background-color: mediumpurple;
+            }
+            20%{
+                width: 20vw;
+                background-color: mediumpurple;
+            }
+            25%{
+                width: 25vw;
+                background-color: yellow;
+            }
+
+            30%{
+                width:30vw;
+                background-color: violet;
+            }
+
+            35%{
+                width:35vw;
+            }
+            40%{
+                width:40vw;
+            }
+            45%{
+                width:45vw;
+            }
+            50%{
+                width:50vw;
+            }
+            55%{
+                width:51vw;
+            }
+            60%{
+                width:52vw;
+            }
+            65%{
+                width:53vw;
+            }
+            70%{
+                width:54vw;
+            }
+            75%{
+                width:55vw;
+            }
+            80%{
+                width:56vw;
+            }
+            85%{
+                width:57vw;
+            }
+            90%{
+                width:58vw;
+            }
+            95%{
+                width:59vw;
+            }
+            100%{
+                width: 60vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Design a Progress Bar using Animation</h1>
+    <div class="container">
+        <div class="bar">
+            <div class="box">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
