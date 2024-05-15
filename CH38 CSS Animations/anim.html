@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 300px;
+            width: 35vw;
+            height: 35vh;
+            background-color: rgb(201, 255, 237);
+            animation: animation1 20s ease-in 1s infinite;
+        }
+
+        .box {
+            border: 1px solid black;
+            width: 15vw;
+            height: 25vh;
+           
+            background-color: rgb(41, 255, 184);
+            /* animation: myAnimation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1.06 35.76%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%);
+            animation-delay: 1s;
+            animation-direction:alternate-reverse;
+            animation-play-state: paused; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: animation2 20s ease-in 1s infinte;
+        }
+
+        @keyframes animation2 {
+            0%{
+                transform: translate(500px);
+                transform: scale(1.0);
+                background-color: beige;
+            }
+            10%{
+                transform: skewX(3000000000deg);
+                background-color: lightcoral;
+            }
+            20%{
+                background-color:violet;
+            }
+            30%{
+               background-color:brown;
+            }
+            40%{
+                background-color:mediumorchid;
+            }
+            50%{
+                background-color: red;
+            }
+            60%{
+                background-color:violet;
+            }
+            70%{
+                background-color: mediumvioletred;
+            }
+            80%{
+                background-color:violet;
+            }
+            90%{
+                background-color: mediumvioletred;
+            }
+            100%{
+                background-color:violet;
+            }
+            
+        }
+        @keyframes animation1 {
+            0%{
+                transform: translate(500px);
+                transform: scale(1.0);
+                background-color: beige;
+            }
+            10%{
+                transform: rotateY(3000000000deg);
+                background-color: lightcoral;
+            }
+            20%{
+                background-color:magenta;
+            }
+            30%{
+               background-color: red;
+            }
+            40%{
+                background-color: yellow;
+            }
+            50%{
+                background-color: mediumaquamarine;
+            }
+            60%{
+                background-color: yellow;
+            }
+            70%{
+                background-color: red;
+            }
+            80%{
+                background-color: mediumvioletred;
+            }
+            90%{
+                background-color: red;
+            }
+            100%{
+                background-color: mediumvioletred;
+            }
+            
+        }
+
+        /* @keyframes myAnimation {
+            from {
+                /* transform: translateX(400px); */
+                /* background-color: lightgray;
+            } */
+
+            /* to {
+                transform: translateX(85vw);
+                transform: rotate(3000000000deg);
+                background-color: lightsalmon;
+            } */
+        /* } */ */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>🐍</h1>
+            <h1>🐍</h1>
+        </div>
+    </div>
+</body>
+
+</html>
