@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-fit and Object-cover</title>
+    <style>
+        .container{
+            border: 2px solid black;
+             width: 35vw;
+            height: 65vh; 
+            background-image: url(SCORPIO_CLASSIC_-2_1660298867440_1660298898503_1660298898503.jpg);
+            background-position:center;
+            background-repeat: repeat-x;
+            background-repeat: no-repeat;       
+        } 
+        img{
+           width: 35vw;
+           height: 65vh;
+           object-fit: cover;
+           /* object-fit: scale-down; */
+           /* object-position: left; */
+           /* object-position: 10px 30px; */ 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <!-- <img src="SCORPIO_CLASSIC_-2_1660298867440_1660298898503_1660298898503.jpg" alt=""> -->
+        </div>
+    </div>
+</body>
+</html>
