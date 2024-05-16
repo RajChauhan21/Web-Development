@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exexcise 8</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: start;
+            align-items: end;
+            border: 2px solid black;
+            width: 99vw;
+            height: 95vh;
+            background-color: powderblue;
+        }
+
+        .ball {
+            border: 2px solid black;
+            width: 10vw;
+            height: 15vh;
+            border-radius: 70px;
+            background-color: gray;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation: bounce 5s linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 0.71 106.47%) 1s infinite alternate-reverse; */
+            /* animation:xbounce;
+            animation-duration: 4s;
+           animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: 1s; */
+            animation: xbounce 4s linear 1s infinite alternate, bounce 1s ease-out 1s infinite alternate;
+           /* animation: bounce 1s ease-out 1s infinite alternate; */
+            /* animation-play-state: paused; */
+            
+        }
+
+        /* .transit{
+            animation: bounce;
+            animation-duration: 5s;
+            animation-timing-function: linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 0.99 32.82%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%);
+            animation-iteration-count: 3;
+            animation-direction: alternate-reverse;
+        } */
+        @keyframes bounce {
+          from{
+            background-color: lightcoral;
+             background-color: deeppink;
+          }
+          to{
+            transform: translateY(-520px);
+            background-color: mediumpurple;
+            background-color: lightgreen;
+          }
+        }
+        @keyframes xbounce {
+          from{
+           
+          }
+          to{
+            transform: translateX(1300px);
+            
+          }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ball transit">
+
+        </div>
+    </div>
+</body>
+
+</html>
