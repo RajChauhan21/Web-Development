@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("img/backgimage.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1400px, 100vw);
+    height: 85vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: black;
+    height: 85vh;
+    width: 100%;
+    opacity: 0.64;
+    position: absolute;
+    top: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    height: 10vh;
+    margin: auto;
+}
+
+nav img {
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: 88%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 40px;
+    color: wheat;
+    position: relative;
+    color: white;
+    gap: 20px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    /* font-size: larger; */
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.line {
+    height: 8px;
+    background-color: gray;
+}
+
+.btn {
+    border: 1px solid rgb(233, 233, 233);
+    background-color: rgba(23, 23, 23, 0.2);
+    opacity: 0.50;
+    border-radius: 5px;
+    padding: 8px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.btn1 {
+    padding: 9px;
+    background-color: red;
+    opacity: 1;
+    border: 1px solid red;
+}
+
+.btn2 {
+    background-color: red;
+    opacity: 1;
+    padding: 15px 45px;
+    font-size: 25px;
+    border: 1px solid red;
+    font-weight: 900px;
+}
+
+.main input {
+    padding: 19px 105px 18px 8px;
+    font-size: 20px;
+    border: 1px solid rgb(233, 233, 233);
+    background-color: rgba(23, 23, 23, 0.7);
+    border-radius: 5px;
+    color: white;
+    text-align: start;
+}
+
+.firstsec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    max-width: 70vw;
+    height: 75vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.firstsecimg {
+    position: relative;
+    width: 550px;
+}
+
+.firstsecimg img {
+    width: 550px;
+    position: relative;
+    z-index: 10;
+}
+
+.firstsecimg video {
+    position: absolute;
+    top: 95px;
+    left: 80px;
+    width: 355px;
+    height: 200px;
+
+}
+
+.firstsectext {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 34px 0;
+    flex-direction: column;
+    margin: 12px;
+    width: 725px;
+}
+
+.thirdsec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 6px; */
+    max-width: 70vw;
+    height: 75vh;
+}
+
+.thirdsecimg {
+    width: 34vw;
+    position: relative;
+}
+
+.thirdsecimg video {
+    position: absolute;
+    top: 40px;
+    left: 136px;
+    width: 23vw;
+}
+
+.faqbox {
+    display: flex;
+    background-color: rgb(68, 68, 68);
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 25px;
+    color: white;
+    width: 70vw;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+
+.faqbox:hover {
+    background-color: grey;
+
+}
+
+.faqbox svg {
+    font-size: 30px;
+    color: white;
+}
+
+.faq h1 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.faq {
+    padding: 40px;
+    background-color: black;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+    padding-top: 80px;
+    width: 50vw;
+    justify-content: space-between;
+}
+
+.footeritem {
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+}
+
+a {
+    color: rgb(212, 208, 208);
+    padding: 15px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+footer {
+    color: white;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+footer .ques {
+    text-align: start;
+    position: absolute;
+    height: 63%;
+    padding-left: 313px;
+    margin: auto;
+}
